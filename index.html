@@ -14,11 +14,236 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather</title>
   </head>
-  <body>
+  <body class="bg-navy-muted">
+    <!-- ============= Navbar Section ============= -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-5">
+      <div class="container w-75">
+        <div
+          class="logo d-flex justify-content-center align-items-center gap-3"
+        >
+          <img
+            src="https://routeweather.netlify.app/images/logo@2x.png"
+            width="60 px"
+            alt=""
+          />
+          <div
+            class="logo-text d-flex flex-column justify-content-center align-content-center"
+          >
+            <h1 class="nav-title fs-4 del-bs-margin text-white">Weather</h1>
+            <h2
+              class="nav-sub-title fs-6 del-bs-margin text-white opacity-50 fw-light"
+            >
+              tag line here
+            </h2>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav gap-2">
+            <li class="nav-item">
+              <a
+                class="nav-link btn border-blue text-blue rounded-5 px-4 py-1"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn border-blue text-blue rounded-5 px-4 py-1"
+                href="#"
+                >News</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn border-blue text-blue rounded-5 px-4 py-1"
+                href="#"
+                >Live cameras</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn border-blue text-blue rounded-5 px-4 py-1"
+                href="#"
+                >Photos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn border-blue text-blue rounded-5 px-4 py-1"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============= Hero Section ============= -->
+
+    <div class="hero">
+      <div class="container">
+        <form action="" class="location-form position-relative">
+          <input
+            placeholder="Search Location ..."
+            type="text"
+            class="form-control bg-navy border-0 w-100 py-3 px-5 text-white rounded-5"
+          />
+          <button
+            class="position-absolute rounded-5 border-0 text-white fw-bolder"
+          >
+            Find
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ============= Hero Section ============= -->
+
+    <div class="main-sec">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <div class="first-card cardd h-100">
+              <div
+                class="date d-flex justify-content-between align-items-center px-3 py-2 bg-navy-muted"
+              >
+                <p class="mb-0">Tuesday</p>
+                <p class="mb-0">8 July</p>
+              </div>
+              <div class="main-content px-3">
+                <p class="mb-0 location-name">Sde Dov Airport</p>
+                <p class="temperature">27.3 C</p>
+                <p class="condition">Clear</p>
+                <ul class="list-unstyled d-flex gap-4">
+                  <li class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-umbrella"></i>
+                    <p class="mb-0">20%</p>
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-wind"></i>
+                    <p class="mb-0">20%</p>
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-compass"></i>
+                    <p class="mb-0">20%</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tomorrow's weather -->
+
+          <div class="col-md-4">
+            <div class="second-card cardd h-100">
+              <div
+                class="date d-flex justify-content-center px-3 py-2 bg-navy-muted"
+              >
+                <p class="mb-0">Wednesday</p>
+              </div>
+              <div class="main-content px-3">
+                <i class="fa-solid fa-sun mb-4"></i>
+                <p class="temperature">27.3 C</p>
+                <p class="temperature2 mb-5">20 C</p>
+                <p class="condition">Clear</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- After Tomorrow's weather -->
+
+          <div class="col-md-4">
+            <div class="third-card cardd h-100">
+              <div
+                class="date d-flex justify-content-center px-3 py-2 bg-navy-muted"
+              >
+                <p class="mb-0">Thursday</p>
+              </div>
+              <div class="main-content px-3">
+                <i class="fa-solid fa-sun mb-4"></i>
+                <p class="temperature">27.3 C</p>
+                <p class="temperature2 mb-5">20 C</p>
+                <p class="condition">Clear</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============= Footer Section ============= -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form action="" class="location-form position-relative">
+              <input
+                placeholder="Enter your email"
+                type="text"
+                class="form-control bg-navy border-0 w-100 py-3 px-5 text-white rounded-5"
+              />
+              <button
+                class="position-absolute rounded-5 border-0 text-white fw-bolder"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center"
+          >
+            <ul class="list-unstyled d-flex gap-3 mb-0">
+              <li>
+                <i class="fa-brands fs-4 fa-facebook text-white"></i>
+              </li>
+              <li>
+                <i class="fa-brands fs-4 fa-instagram text-white"></i>
+              </li>
+              <li>
+                <i class="fa-brands fs-4 fa-google text-white"></i>
+              </li>
+              <li>
+                <i class="fa-brands fs-4 fa-youtube text-white"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-text text-center mt-5">
+              <p class="text-white opacity-50 fw-lighter">
+                Copyright 2014 Company name. Designed by Themezy. All rights
+                reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- BS script link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/a6e81a47c0.js"
       crossorigin="anonymous"
     ></script>
     <!-- My Js Link -->

@@ -1,0 +1,121 @@
+.del-bs-margin {
+  margin-bottom: 0;
+}
+:root {
+  --navy-blue: #0b192c;
+  --baby-blue: #007fc8;
+  --muted-navy-blue: #10243b;
+  --muted-blue: #0a182b;
+  --blue: #061222;
+  --footer-color: #172e49;
+}
+.border-blue {
+  border: solid 2px var(--baby-blue);
+}
+.text-blue {
+  color: var(--baby-blue);
+}
+.bg-navy {
+  background-color: var(--navy-blue);
+}
+.bg-navy-muted {
+  background-color: var(--muted-navy-blue);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--navy-blue) !important;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+/* Hero Section */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+  padding-top: 100px;
+}
+input::placeholder {
+  color: grey !important;
+}
+input {
+  background-color: var(--navy-blue) !important ;
+}
+button {
+  background-color: var(--baby-blue);
+  top: 6px;
+  bottom: 6px;
+  right: 6px;
+  padding: 10px 40px !important;
+}
+
+.main-sec {
+  margin-top: -150px;
+}
+.cardd {
+  background-color: var(--navy-blue);
+  color: white;
+  /* border-radius: 10px; */
+  padding-bottom: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(15px);
+}
+.main-sec .second-card {
+  background-color: var(--blue);
+}
+.main-sec .second-card .date {
+  background-color: var(--muted-blue);
+}
+.main-sec .row {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main-sec .main-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-sec .date {
+  font-weight: 100;
+  /* border-top-right-radius: 10px;
+  border-top-left-radius: 10px; */
+  margin-bottom: 10px;
+}
+.main-sec .first-card .temperature {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.main-sec .second-card .temperature,
+.main-sec .third-card .temperature {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.main-sec .second-card .temperature2,
+.main-sec .third-card .temperature2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.condition {
+  color: var(--baby-blue);
+}
+.main-content .location-name {
+  color: rgb(225, 225, 225);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-color);
+  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
