@@ -13,6 +13,11 @@ searchBtn.addEventListener("click", function () {
 
 let ApiKey = "c0327603fd9147c3a72185508251007";
 
+(() => {
+  searchInput.value = "Cairo";
+  getWeather("Cairo");
+})();
+
 async function getWeather(city) {
   const data = await fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${city}&days=3`
