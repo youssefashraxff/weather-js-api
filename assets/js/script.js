@@ -8,9 +8,7 @@ searchInput.addEventListener("keypress", function () {
 });
 
 searchBtn.addEventListener("click", function () {
-  getCurrentWeather(searchInput.value);
-  getNextWeather(searchInput.value);
-  getNextTomorrowWeather(searchInput.value);
+  getWeather(searchInput.value);
 });
 
 let ApiKey = "c0327603fd9147c3a72185508251007";
