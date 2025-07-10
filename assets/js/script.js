@@ -14,10 +14,9 @@ searchBtn.addEventListener("click", function () {
 let ApiKey = "c0327603fd9147c3a72185508251007";
 
 async function getWeather(city) {
-  data = await fetch(
+  const data = await fetch(
     `http://api.weatherapi.com/v1/forecast.json?key=${ApiKey}&q=${city}&days=3`
   );
-
   const response = await data.json();
 
   const cityName = response.location.name;
