@@ -29,6 +29,18 @@
 .navbar-collapse {
   flex-grow: 0;
 }
+.navbar .navbar-nav a {
+  color: white;
+  transition: 0.3s;
+}
+.navbar .navbar-nav a:hover {
+  border: solid 2px var(--baby-blue);
+  color: var(--baby-blue);
+}
+.navbar .navbar-nav .active {
+  border: solid 2px var(--baby-blue);
+  color: var(--baby-blue);
+}
 
 /* Hero Section */
 
